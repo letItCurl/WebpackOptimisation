@@ -1,7 +1,6 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
 
 
 module.exports = {
@@ -9,12 +8,6 @@ module.exports = {
     output:{
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
-    },
-    mode: 'development',
-    devServer:{
-        contentBase:'./dist',
-        port:5566,
-        hot: true
     },
     module:{
         rules:[
@@ -45,7 +38,6 @@ module.exports = {
         ]
     },
     plugins:[
-        new webpack.HotModuleReplacementPlugin,
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
