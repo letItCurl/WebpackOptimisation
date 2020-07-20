@@ -1,8 +1,6 @@
 # Webpack case study
 > Let's dig into webpack configs 👽
 
-***How to take a regular website with cdn's link and bundle everything in a file while having file limits concerns.***
-
 <table style="border: none;">
   <tr>
     <td>
